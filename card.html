@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Media Card Component</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+<style>
+/* Sections */
+.content {
+  max-width: 1080px;
+  margin: auto;
+  padding: 8px;
+}
+article {
+  background-color: white;
+  margin: auto;
+}
+footer {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  margin: auto;
+  padding: 8px 20px 8px 20px;
+}
+/* Page Details */
+p {
+  font: "Helvetica", sans-serif;
+  padding: 12px;
+  text-align: center;
+}
+img {
+  background-color: #ccc;
+  max-width: 100%;
+  border-top-left-radius: 3px;
+  border-top-right-radius: 3px;
+}  
+.card {
+  width: 320px;
+  box-shadow: 1px 1px 4px 1px #888;
+  box-shadow-radius: 3px;
+  border-radius: 3px;
+  background color: white;
+}
+.cardButtons {
+  grid-column: 1/2;
+}
+span {
+  grid-column: 2/3; 
+  color: #888;
+  text-align: right;
+  margin-top: auto;
+  margin-bottom: auto;
+}
+
+button {
+  display: inline-block;
+  background-color: white;
+  color: #888;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+  padding: 6px;
+}
+</style>
+<body>
+  <div class="content">
+    <article class="card">
+        <img src=https://picsum.photos/320/240 alt="sample image">
+        <p>
+          This is a wider card with supporting text below as a natural lead-in to additional content. 
+          This content is a little bit longer.
+        </p>
+
+      <footer>
+        <div class="cardButtons">
+          <button class="viewButton">View</button>
+          <button class="editButton">Edit</button>
+        </div>
+        <span>9 minutes</span>
+      </footer>
+    </article> 
+  <div>
+</body>
+</html>
